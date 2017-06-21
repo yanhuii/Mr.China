@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/dphz.css">
+	<script type="text/javascript">
+		window.onload=function()
+		{
+
+			var timer=null;
+			var oDiv=document.getElementById('p1');
+			var li1=document.getElementById('li1');
+
+var li2=document.getElementById('li2');
+
+var li3=document.getElementById('li3');
+
+var li4=document.getElementById('li4');
+
+			var li5=document.getElementById('li5');
+
+			li1.onmouseover=function()
+			{
+				arr(432);
+			}
+			li1.onmouseout=function()
+			{
+				arr(760);
+			}
+			li2.onmouseover=function()
+			{
+				arr(532);
+			}
+			li2.onmouseout=function()
+			{
+				arr(760);
+			}
+			
+			li3.onmouseover=function()
+			{
+				arr(645);
+			}
+			li3.onmouseout=function()
+			{
+				arr(760);
+			}
+			li5.onmouseover=function()
+			{
+				arr(875);
+			}
+			li5.onmouseout=function()
+			{
+				arr(760);
+			}
+
+			
+			function arr(iTarget)
+			{
+				clearInterval(timer);
+				timer=setInterval(function()
+					{
+						var speed=(iTarget-oDiv.offsetLeft)/10;
+						speed=speed>0?Math.ceil(speed):Math.floor(speed);
+						if (oDiv.offsetLeft==iTarget) 
+						{
+							clearInterval(timer);
+						}else{
+							oDiv.style.left=oDiv.offsetLeft+speed+'px';
+						}
+					}, 30);
+			}
+		}
+		</script>
+</head>
+<body>
+	<div id="all">
+	<h1><img src="img/logo.png"></h1>
+		<div id="head">
+	          <nav>
+	          <li id="li1"><a href="index.html">首页</a></li>
+	          <li id="li2"><a href="gfsc.html">在线购买</a>  </li>
+	          <li id="li3"><a href="cpfg.html">产品风格</a> </li>
+	          <li id="li4"><a href="#">店铺合作</a> </li>
+	          <li id="li5"><a href="ppys.html">品牌元素</a></li>
+	          <li id="li6"><a href="form.html">登录/注册</a></li>
+	          <li id="li7"><img src="img/1.png" >
+	          <img src="img/2.png" >
+	          <img src="img/3.png" ></li>
+	          </nav>
+	          <div id="p1"></div>
+	    </div>
+
+	    <div id="center">
+	    	<div class="pic1">
+	    		<a href="javascript:;">店铺形象展示</a>
+	    		<div class="i1"><img class="img" src="img/dp1.jpg"></div>
+	    		<div class="i2"><img class="img" src="img/dp2.jpg"></div>
+	    		<div class="i3"><img class="img" src="img/dp3.jpg"></div>
+	    		<div class="i4"><img class="img" src="img/dp4.jpg"></div>
+	    		<div class="i5">
+	    		<div class="ii">
+	    		<b>中国先生</b><hr style="margin: 20px;color: white;">
+	    		<p>Mr.China遵循中国传统服饰的精神内涵，结合现代人的审美需求，融合先进的服饰设计思想，创造出品位迥异于西方的东方服饰品牌</p></div>
+	    		</div>
+
+	    	</div>
+	    	<div class="pic2">
+	    	<a href="javascript:;">我们拥有</a>
+	    		<div class="i6"><img class="img" src="img/dp5.jpg"></div>
+	    		<div class="i7"><img class="img" src="img/dp6.jpg"></div>
+	    		<div class="i8">让世界爱上中华之美
+在人类的历史长河中，中国传统文化是世界上最古老的文化之一，五千年的中华之美，誉满全球，为世人称道。然当今之世，中华文化却鲜有问津，少有传承。
+我们所有人都要树立一种革新和传承传统文化的使命感与责任感，使传统文化注入新的生命力，成为推动中华民族走向世界的源动力。只有这样，才能使自己的国家民族兴旺发达，才能让世界重新爱上中华之美。</div>
+	    	</div>
+	    	<div class="pic3">
+	    		<a href="javascript:;">加盟条件</a>
+	    		<div class="i9"><img class="img" src="img/dp7.jpg"></div>
+	    		<div class="i10">
+	    	
+	    			<p>1.认同中国先生品牌理念及经营管理模式；</p>
+	    			<p>2.热衷于中华传统文化事业的传承与发扬；</p>
+	    			<p>3.具有合法的公民身份或法人身份；</p>
+	    			<p>4.具有良好的个人信誉、商业意识和经营管理能力；</p>
+	    			<p>5.接受中国先生品牌理念及经营管理模式；</p>
+	    			
+	    			<p>6.具有80—200平方米的经营场所；</p>
+	    			<p>7.加盟店仅销售意树供应商品；</p>
+	    			<p>8.遵守品牌理念及经营管理模式；</p>
+	    			<p>9.店址选择须经意树总部审核批准；</p>
+	    			<p>10.店面中国先生品牌理念及经营管理模式；</p>
+	    			
+	    			<p>11.具备相应的资金投入能力。</p>
+	    		
+	    		</div>
+	    	</div>
+	    	<div class="pic4">
+	    		<a href="javascript:;">加盟政策</a>
+	    		<div class="i11"><img class="img" src="img/dp8.jpg"></div>
+	    		<div class="i12">
+	    	
+	    			<p>1、合同签约时间：所有单店加盟商的经销协议书一年一签。</p>
+	    			<p>2、区域范围：仅限于授权区域的销售，禁止跨区销售，除非先行得到公司书面确认。</p>
+	    			<p>3、进货政策：加盟商应直接从公司总部进货，不得从其他加盟商处进货，也不得销售其他品牌的产品。</p>
+	    			<p>4、首批拿货政策：首批进货必须达到品牌福建总公司规定的最低额度，数量需满足单店开张要求，加盟商购货时，可享受商品七五折优惠。</p>
+	    			<p>5、应对商场活动策略：在商场活动期间，公司可提供给加盟商最低七五折起的折扣商品，</p>
+	    			<p>6、销售价格：以建议零售价格销售，不能低于最低限价销售（促销活动时除外）；大型项目价格可根据实际情况协商予以特殊优惠。</p>
+	    			<p>更多资料请发送 E-mail：sales@yishurgroup.com</p>
+	    		
+	    		
+	    		</div>
+	    	</div>
+	    </div>
+
+
+
+
+
+	</div>
+</body>
+</html>

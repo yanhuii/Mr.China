@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/ppys.css">
+	<script type="text/javascript">
+		window.onload=function()
+		{
+
+			var timer=null;
+			var oDiv=document.getElementById('p1');
+			var li1=document.getElementById('li1');
+
+var li2=document.getElementById('li2');
+
+var li3=document.getElementById('li3');
+
+var li4=document.getElementById('li4');
+
+			var li5=document.getElementById('li5');
+
+			li1.onmouseover=function()
+			{
+				arr(432);
+			}
+			li1.onmouseout=function()
+			{
+				arr(875);
+			}
+			li2.onmouseover=function()
+			{
+				arr(532);
+			}
+			li2.onmouseout=function()
+			{
+				arr(875);
+			}
+			
+			li3.onmouseover=function()
+			{
+				arr(645);
+			}
+			li3.onmouseout=function()
+			{
+				arr(875);
+			}
+			li4.onmouseover=function()
+			{
+				arr(760);
+			}
+			li4.onmouseout=function()
+			{
+				arr(875);
+			}
+			
+
+			
+			function arr(iTarget)
+			{
+				clearInterval(timer);
+				timer=setInterval(function()
+					{
+						var speed=(iTarget-oDiv.offsetLeft)/10;
+						speed=speed>0?Math.ceil(speed):Math.floor(speed);
+						if (oDiv.offsetLeft==iTarget) 
+						{
+							clearInterval(timer);
+						}else{
+							oDiv.style.left=oDiv.offsetLeft+speed+'px';
+						}
+					}, 30);
+			}
+		}
+		</script>
+</head>
+<body>
+	<div id="all">
+	<h1><img src="img/logo.png"></h1>
+		<div id="head">
+
+	          <nav>
+	          <li id="li1"><a href="index.html">首页</a></li>
+	          <li id="li2"><a href="gfsc.html">在线购买</a>  </li>
+	          <li id="li3"><a href="cpfg.html">产品风格</a> </li>
+	          <li id="li4"><a href="dphz.html">店铺合作</a> </li>
+	          <li id="li5"><a href="#">品牌元素</a>
+	          <li id="li6"><a href="form.html">登录/注册</a></li>
+	          <li id="li7"><img src="img/1.png" >
+	          <img src="img/2.png" >
+	          <img src="img/3.png" ></li>
+	          </nav>
+	          <div id="p1"></div>
+	    </div>
+
+	    <div id="center">
+	    	
+	    	<div class="video"><video src="video/beijing.mp4" autoplay="1" controls="1" muted="1"></video></div>
+	    	<img src="img/fulian_bb.jpg">
+	    	<div class="read">
+	    		<p>Mr.China秉持匠人精神，拒绝廉价、粗糙的大规模工业化生产。专注于自己热爱的事物，以旁人难以理解的单纯和执着，对这个浮华和喧嚣的世界说不，默默地打造着心中的完美。　　濒临失传的不仅仅是手工盘扣技术，更是中国传统匠人的精神与坚守。</p>
+	    		<p>几乎所有和中国风沾边的商家都在说保护和传承中华传统文化与手工艺。Mr.China的手工盘扣工人月薪可达五位数。我们深信，只有让年轻人从传统手工艺中赚到钱，才有人愿意投身此业。而这样才是真正在保护并传承传统工艺和文化。</p>
+	    	</div>
+	    </div>
+	</div>
+</body>
+</html>

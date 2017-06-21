@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/cpfg.css">
+	<script type="text/javascript">
+		window.onload=function()
+		{
+
+			var timer=null;
+			var oDiv=document.getElementById('p1');
+			var li1=document.getElementById('li1');
+
+var li2=document.getElementById('li2');
+
+var li3=document.getElementById('li3');
+
+var li4=document.getElementById('li4');
+
+			var li5=document.getElementById('li5');
+
+			li1.onmouseover=function()
+			{
+				arr(432);
+			}
+			li1.onmouseout=function()
+			{
+				arr(645);
+			}
+			li2.onmouseover=function()
+			{
+				arr(532);
+			}
+			li2.onmouseout=function()
+			{
+				arr(645);
+			}
+			
+			li4.onmouseover=function()
+			{
+				arr(760);
+			}
+			li4.onmouseout=function()
+			{
+				arr(645);
+			}
+			li5.onmouseover=function()
+			{
+				arr(875);
+			}
+			li5.onmouseout=function()
+			{
+				arr(645);
+			}
+
+			
+			function arr(iTarget)
+			{
+				clearInterval(timer);
+				timer=setInterval(function()
+					{
+						var speed=(iTarget-oDiv.offsetLeft)/10;
+						speed=speed>0?Math.ceil(speed):Math.floor(speed);
+						if (oDiv.offsetLeft==iTarget) 
+						{
+							clearInterval(timer);
+						}else{
+							oDiv.style.left=oDiv.offsetLeft+speed+'px';
+						}
+					}, 30);
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="all">
+	<h1><img src="img/logo.png"></h1>
+		<div id="head">
+	          <nav>
+	          <li id="li1"><a href="index.html">首页</a></li>
+	          <li id="li2"><a href="gfsc.html">在线购买</a>  </li>
+	          <li id="li3"><a href="#">产品风格</a> </li>
+	          <li id="li4"><a href="dphz.html">店铺合作</a> </li>
+	          <li id="li5"><a href="ppys.html">品牌元素</a>
+	          <li id="li6"><a href="form.html">登录/注册</a></li>
+	          <li id="li7"><img src="img/1.png" >
+	          <img src="img/2.png" >
+	          <img src="img/3.png" ></li>
+	          </nav>
+	          <div id="p1"></div>
+	    </div>
+
+	    <div id="center">
+	    	<img class="img" src="img/changpin.jpg">
+	    	<div class="bg">
+	    		<h2>新品</h2><br>
+	    		<hr><br>
+	    		<p>文化之美：挖掘匠心精神，发现中华文化之美</p>
+	    		<p>五千年中华之美，来源于先人对自然，对人与自然关系的哲学思考和美学表达。</p>
+	    		<p>Mr.China，秉承匠心精神，诠释传统服饰之美的现代时尚美学。</p>
+	    	</div>
+	    	<div class="ban">
+	    		<a href="sj.html"><img src="img/ban.gif">
+	    	</div>
+	    </div>
+
+	    <footer>
+	    	<p style="color: black"> 让世界爱上中华之美____Mr.China 中国先生</p>
+	    </footer>
+
+	</div>
+</body>
+</html>

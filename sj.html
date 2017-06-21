@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/sj.css">
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oDiv1=document.getElementById('jiahao');
+			var oDiv2=document.getElementById('tubiao');
+			var timer=null;
+			oDiv2.onmouseover=oDiv1.onmouseover=function()
+			{
+				clearTimeout(timer);
+				oDiv2.style.display='block';
+			}
+			oDiv2.onmouseout=oDiv1.onmouseout=function()
+			{
+				timer=setTimeout(
+					function()
+					{
+						oDiv2.style.display='none';},500);
+			}
+
+			var timer=null;
+			var oDiv=document.getElementById('p1');
+			var li1=document.getElementById('li1');
+
+var li2=document.getElementById('li2');
+
+var li3=document.getElementById('li3');
+
+var li4=document.getElementById('li4');
+
+			var li5=document.getElementById('li5');
+			li2.onmouseover=function()
+			{
+				arr(532);
+			}
+			li2.onmouseout=function()
+			{
+				arr(433);
+			}
+			li3.onmouseover=function()
+			{
+				arr(645);
+			}
+			li3.onmouseout=function()
+			{
+				arr(433);
+			}
+			li4.onmouseover=function()
+			{
+				arr(760);
+			}
+			li4.onmouseout=function()
+			{
+				arr(433);
+			}
+			li5.onmouseover=function()
+			{
+				arr(875);
+			}
+			li5.onmouseout=function()
+			{
+				arr(433);
+			}
+
+			
+			function arr(iTarget)
+			{
+				clearInterval(timer);
+				timer=setInterval(function()
+					{
+						var speed=(iTarget-oDiv.offsetLeft)/10;
+						speed=speed>0?Math.ceil(speed):Math.floor(speed);
+						if (oDiv.offsetLeft==iTarget) 
+						{
+							clearInterval(timer);
+						}else{
+							oDiv.style.left=oDiv.offsetLeft+speed+'px';
+						}
+					}, 30);
+			}
+		}
+	</script>
+</head>
+<body>
+<div id="all">
+<h1><img src="img/logo.png"></h1>
+	<div id="head">
+	<nav>
+	<li id="li1"><a href="index.html">首页</a></li>
+	<li id="li2"><a href="gfsc.html">在线购买</a>  </li>
+	<li id="li3"><a href="cpfg.html">产品风格</a> </li>
+	<li id="li4"><a href="dphz.html">店铺合作</a> </li>
+	<li id="li5"><a href="ppys.html">品牌元素</a></li>
+	<li id="li6"><a href="form.html">登录/注册</a></li>
+	<li id="li7"><img src="img/1.png" >
+	<img src="img/2.png" >
+	<img src="img/3.png" ></li>
+	</nav>
+	<div id="p1"></div>
+	</div>
+	<div id="center">
+		<div><img src="img/sj1.jpg"></div>
+		<div><img src="img/sj2.jpg"></div>
+		<div><img src="img/sj3.jpg"></div>
+		<div><img src="img/sj4.jpg"></div>
+		<div><img src="img/sj5.jpg"></div>
+		<div><img src="img/sj6.jpg"></div>
+		<div><img src="img/sj7.jpg"></div>
+		<div><img src="img/sj8.jpg"></div>
+		<div><img src="img/sj9.jpg"></div>
+		
+		
+		
+	</div>
+	
+<div id="jiahao">
+	<span id="icon">
+		<img src="img/icon.png">
+	</span>
+</div>
+<div id="tubiao">
+	<img src="img/1.png" width="60px" height="60px">
+	<img src="img/2.png" width="60px" height="60px">
+	<img src="img/3.png" width="60px" height="60px">
+	</div>
+</div>
+<div id="foot">通告：为方便您的支付，官网建议您使用手机微信扫描二维码购买。
+</div>
+</body>
+</html>

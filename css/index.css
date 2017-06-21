@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding: 0;
+}
+h1{
+	position: fixed;
+	top: 5px;
+	left: 140px;
+	z-index: 1000;
+}
+#all{
+	margin: auto;
+	width: 100%;
+	position: relative;
+}
+#head{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	background: #6F183A;
+	opacity: 0.9;
+}
+
+nav{
+	margin-left: 400px;
+	
+
+}
+nav a{
+	text-decoration: none;
+	text-align: center;
+	line-height: 80px;
+	color: #d8c391;
+	font-size: 16px;
+	position: relative;
+
+}
+#p1{
+			width: 63px;
+			height: 1px;
+			background: #d8c391;
+			position: absolute;
+			top: 60px;
+			left: 433px;
+		}
+nav li{
+	float: left;
+	padding-left: 50px;
+	list-style: none;
+}
+nav #li6{
+	float: right;
+	margin-right: 400px;
+}
+nav #li7{
+	margin-left: 150px;
+}
+img {
+	float: left;
+}
+#foot{
+	position: absolute;
+	top: 6272px;
+	width: 100%;
+	height: 50px;
+	background: #6F183A;
+	opacity: 0.9;
+	color: #d8c391;
+	text-align: center;
+	line-height: 50px;
+
+}
+#jiahao{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	z-index: 2;
+	right: 0px;
+	bottom: 0px;
+	background: #6e1e40;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	
+}
+#jiahao #icon{
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin: 8px 3px;
+	transition: all 1.2s;
+	-webkit-transition: all 1.2s;
+	-o-transition: all 1.2s;
+	-moz-transition: all 1.2s;
+}
+
+#jiahao #icon:hover{
+	transform: scale(1.2) rotateY(360deg);
+	-webkit-transform: scale(1.2) rotateY(360deg);
+	-o-transform: scale(1.2) rotateY(360deg);
+	-moz-transform: scale(1.2) rotateY(360deg);
+}
+#tubiao{
+	position: fixed;
+	z-index: 1;
+	right: 0px;
+	bottom: 0px;
+	width: 60px;
+	height: 300px;
+	background: #6e1e40;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	display: none;
+}
+#tubiao img{
+	position: relative;
+	left: -15px;
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/gfsc.css">
+	<script src='js/startMove.js'></script>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var timer=null;
+			var oDiv=document.getElementById('p1');
+			var li1=document.getElementById('li1');
+
+var li2=document.getElementById('li2');
+
+var li3=document.getElementById('li3');
+
+var li4=document.getElementById('li4');
+
+var li5=document.getElementById('li5');
+
+            li1.onmouseover=function()
+			{
+				arr(432);
+			}
+			li1.onmouseout=function()
+			{
+				arr(533);
+			}
+
+			li3.onmouseover=function()
+			{
+				arr(645);
+			}
+			li3.onmouseout=function()
+			{
+				arr(533);
+			}
+			li4.onmouseover=function()
+			{
+				arr(760);
+			}
+			li4.onmouseout=function()
+			{
+				arr(533);
+			}
+			li5.onmouseover=function()
+			{
+				arr(875);
+			}
+			li5.onmouseout=function()
+			{
+				arr(533);
+			}
+
+
+			function arr(iTarget)
+			{
+				clearInterval(timer);
+				timer=setInterval(function()
+					{
+						var speed=(iTarget-oDiv.offsetLeft)/10;
+						speed=speed>0?Math.ceil(speed):Math.floor(speed);
+						if (oDiv.offsetLeft==iTarget)
+						{
+							clearInterval(timer);
+						}else{
+							oDiv.style.left=oDiv.offsetLeft+speed+'px';
+						}
+					}, 30);
+			}
+			var oDiv1=document.getElementById('d1');
+			var oSpan1=document.getElementById('span1');
+
+			oDiv1.onmouseover=function()
+			{
+				oSpan1.style.display='block';
+				startMove(oSpan1,{top:1045,});
+			}
+			oDiv1.onmouseout=function()
+			{
+				oSpan1.style.display='none';
+				startMove(oSpan1,{top:1105,});
+			}
+
+			var oDiv2=document.getElementById('d2');
+			var oSpan2=document.getElementById('span2');
+
+			oDiv2.onmouseover=function()
+			{
+				oSpan2.style.display='block';
+				startMove(oSpan2,{top:1045,});
+			}
+			oDiv2.onmouseout=function()
+			{
+				oSpan2.style.display='none';
+				startMove(oSpan2,{top:1105,});
+			}
+
+			var oDiv3=document.getElementById('d3');
+			var oSpan3=document.getElementById('span3');
+
+			oDiv3.onmouseover=function()
+			{
+				oSpan3.style.display='block';
+				startMove(oSpan3,{top:1045,});
+			}
+			oDiv3.onmouseout=function()
+			{
+				oSpan3.style.display='none';
+				startMove(oSpan3,{top:1105,});
+			}
+
+			var oDiv4=document.getElementById('d4');
+			var oSpan4=document.getElementById('span4');
+
+			oDiv4.onmouseover=function()
+			{
+				oSpan4.style.display='block';
+				startMove(oSpan4,{top:1045,});
+			}
+			oDiv4.onmouseout=function()
+			{
+				oSpan4.style.display='none';
+				startMove(oSpan4,{top:1105,});
+			}
+
+			var oDiv5=document.getElementById('d5');
+			var oSpan5=document.getElementById('span5');
+
+			oDiv5.onmouseover=function()
+			{
+				oSpan5.style.display='block';
+				startMove(oSpan5,{top:1470,});
+			}
+			oDiv5.onmouseout=function()
+			{
+				oSpan5.style.display='none';
+				startMove(oSpan5,{top:1530,});
+			}
+
+			var oDiv6=document.getElementById('d6');
+			var oSpan6=document.getElementById('span6');
+
+			oDiv6.onmouseover=function()
+			{
+				oSpan6.style.display='block';
+				startMove(oSpan6,{top:1470,});
+			}
+			oDiv6.onmouseout=function()
+			{
+				oSpan6.style.display='none';
+				startMove(oSpan6,{top:1530,});
+			}
+
+			var oDiv7=document.getElementById('d7');
+			var oSpan7=document.getElementById('span7');
+
+			oDiv7.onmouseover=function()
+			{
+				oSpan7.style.display='block';
+				startMove(oSpan7,{top:1470,});
+			}
+			oDiv7.onmouseout=function()
+			{
+				oSpan7.style.display='none';
+				startMove(oSpan7,{top:1530,});
+			}
+
+			var oDiv8=document.getElementById('d8');
+			var oSpan8=document.getElementById('span8');
+
+			oDiv8.onmouseover=function()
+			{
+				oSpan8.style.display='block';
+				startMove(oSpan8,{top:1470,});
+			}
+			oDiv8.onmouseout=function()
+			{
+				oSpan8.style.display='none';
+				startMove(oSpan8,{top:1530,});
+			}
+
+
+
+
+		}
+	</script>
+</head>
+<body>
+	<div id="all">
+	<h1><img src="img/logo.png"></h1>
+	<div id="head">
+	<nav>
+	<li id="li1"><a href="index.html">首页</a></li>
+	<li id="li2"><a href="#">在线购买</a>  </li>
+	<li id="li3"><a href="cpfg.html">产品风格</a> </li>
+	<li id="li4"><a href="dphz.html">店铺合作</a> </li>
+	<li id="li5"><a href="ppys.html">品牌元素</a></li>
+	<li id="li6"><a href="form.html">登录/注册</a></li>
+	<li id="li7"><img src="img/1.png" >
+	<img src="img/2.png" >
+	<img src="img/3.png"></li>
+	</nav>
+	<div id="p1"></div>
+	</div>
+         <div id="banner">
+         	<div class="bg">
+         	<p class="bg_p">春&nbsp;夏&nbsp;秋&nbsp;冬</p>
+         		<div class="hr"></div>
+         		<div class="ul1">
+         			<li>全部宝贝</li>
+         			<li>新品出炉</li>
+         			<li>女装精品</li>
+         			<li>锦衣系列</li>
+         			<li>帝旺系列</li>
+         			<li>临官系列</li>
+         			<li>官带系列</li>
+         			<li>庖丁系列</li>
+         			<li>武勒工名</li>
+         			<li>降魔系列</li>
+         			<li>盗墓笔记</li>
+         			<li>仗剑天涯</li>
+         			<li>我的江湖</li>
+         		</div>
+         		<div class="hr"></div>
+         		<div class="ul2">
+         			<li>唐装系列</li>
+         			<li>汉服系列</li>
+         			<li>外套系列</li>
+         			<li>禅衣系列</li>
+         			<li>衬衫系列</li>
+         			<li>中装系列</li>
+         			<li>长短系列</li>
+         			<li>毛衣系列</li>
+         			<li>卫衣系列</li>
+         			<li>裤装系列</li>
+         			<li>鞋类系列</li>
+         			<li>帽子系列</li>
+         			<li>配件系列</li>
+         		</div>
+         	</div>
+         </div>
+       <div class="center">
+       	<div class="top">
+       	<div id="d1"><a href="sj.html"><img src="img/4.jpg" width="425px" height="425px"></div>
+       	<div id="d2"><a href="sj.html"><img src="img/5.jpg" width="425px" height="425px"></div>
+       	<div id="d3"><a href="sj.html"><img src="img/6.jpg" width="425px" height="425px"></div>
+       	<div id="d4"><a href="sj.html"><img src="img/7.jpg" width="425px" height="425px"></div>
+       	</div>
+
+       	<div class="middle">
+       	<div id="d5"><a href="sj.html"><img src="img/8.jpg" width="425px" height="425px"></div>
+       	<div id="d6"><a href="sj.html"><img src="img/9.jpg" width="425px" height="425px"></div>
+       	<div id="d7"><a href="sj.html"><img src="img/10.jpg" width="425px" height="425px"></div>
+       	<div id="d8"><a href="sj.html"><img src="img/11.jpg" width="425px" height="425px"></div>
+       	</div>
+
+       	<div class="bottom">
+       	<div id="d9"><a href="sj.html"><img src="img/12.jpg" width="425px" height="425px"></div>
+       	<div id="d10"><a href="sj.html"><img src="img/13.jpg" width="425px" height="425px"></div>
+       	<div id="d11"><a href="sj.html"><img src="img/14.jpg" width="425px" height="425px"></div>
+       	<div id="d12"><a href="sj.html"><img src="img/15.jpg" width="425px" height="425px"></div>
+       	</div>
+
+       	<div class="bottom">
+       	<div id="d9"><a href="sj.html"><img src="img/16.jpg" width="425px" height="425px"></div>
+       	<div id="d10"><a href="sj.html"><img src="img/17.jpg" width="425px" height="425px"></div>
+       	<div id="d11"><a href="sj.html"><img src="img/18.jpg" width="425px" height="425px"></div>
+       	<div id="d12"><a href="sj.html"><img src="img/19.jpg" width="425px" height="425px"></div>
+       	</div>
+
+       	<div class="bottom">
+       	<div id="d9"><a href="sj.html"><img src="img/20.jpg" width="425px" height="425px"></div>
+       	<div id="d10"><a href="sj.html"><img src="img/21.jpg" width="425px" height="425px"></div>
+       	<div id="d11"><a href="sj.html"><img src="img/22.jpg" width="425px" height="425px"></div>
+       	<div id="d12"><a href="sj.html"><img src="img/23.jpg" width="425px" height="425px"></div>
+       	</div>
+       </div>
+          <div id="span1">
+       		<p><b>RMB</b>&nbsp;2398.00<p>
+       		Mr.China<br>
+       		锦衣玉麒麟收褶落档裤
+       	</div>
+       	<div id="span2">
+       		<p><b>RMB</b>&nbsp;2398.00<p>
+       		Mr.China<br>
+       		锦衣玉麒麟收褶落档裤
+       	</div>
+       	<div id="span3">
+       		<p><b>RMB</b>&nbsp;2398.00<p>
+       		Mr.China<br>
+       		锦衣玉麒麟收褶落档裤
+       	</div>
+       	<div id="span4">
+       		<p><b>RMB</b>&nbsp;2398.00<p>
+       		Mr.China<br>
+       		锦衣玉麒麟收褶落档裤
+       	</div>
+       	<div id="span5">
+       		<p><b>RMB</b>&nbsp;2398.00<p>
+       		Mr.China<br>
+       		锦衣玉麒麟收褶落档裤
+       	</div>
+       	<div id="span6">
+       		<p><b>RMB</b>&nbsp;2398.00<p>
+       		Mr.China<br>
+       		锦衣玉麒麟收褶落档裤
+       	</div>
+       	<div id="span7">
+       		<p><b>RMB</b>&nbsp;2398.00<p>
+       		Mr.China<br>
+       		锦衣玉麒麟收褶落档裤
+       	</div>
+       	<div id="span8">
+       		<p><b>RMB</b>&nbsp;2398.00<p>
+       		Mr.China<br>
+       		锦衣玉麒麟收褶落档裤
+       	</div>
+       	<div class="tonext">
+       <p><a href="#" style="color:  #d8c391;">1</a>
+       	<a href="#">2</a>
+       	<a href="#">3</a>
+       	<a href="#">4</a>
+       	<a href="#">5</a>
+       	<a href="#">6</a>
+       	<a href="#">7</a>
+       <a href="#">	<input type="button" name="" value="下一页">
+       	</div>
+	</div>
+</body>
+</html>
